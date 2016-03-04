@@ -1,0 +1,15 @@
+{
+  "apps": [{
+    "name": "reactLearn",
+    "script":"app.js",
+    "exec_mode": "cluster_mode",
+    "instances":"1",
+    "watch": ["app.js", "views/*", "routes/*", "config.js", "bundle.js", "webpack.config.js"],
+    "env":{
+      "NODE_ENV":"development"
+    },
+    "env_production":{
+      "NODE_ENV":"production"
+    }
+  }]
+}
